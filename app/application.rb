@@ -8,7 +8,7 @@ class Application
     
     if req.path.match(/items/)
       item_name = req.path.split("/items/").last
-      price = 
+      item_price = @@items.find { |i| i.
     else
       resp.write "Route not found"
       resp.status = 404
